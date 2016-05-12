@@ -1,0 +1,9 @@
+<h1>Need help deciding where to eat?</h1>
+<p>Easy. Just type in what restaurants you want to choose from (delimited by a comma of course) and click Pick a Restaurant!</p>
+<%= form_for page_restaurant_chooser_path, :method => "POST" do %>
+    <%= text_field_tag :RestaurantChoices, @choices, :autofocus => "autofocus", :placeholder => "Enter Restaurants Here" %>
+    <br><br>
+    <%= submit_tag "Pick a Restaurant!" %>
+    <br><br>
+    <p><%=@finalchoice%></p>
+<% end %>

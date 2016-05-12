@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Restaurant Chooser</title>
+  <%= stylesheet_link_tag    'application', media: 'screen', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'print', media: 'print', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true -%>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<!-- Navigation -->
+<%= render 'layouts/nav' %><section id="main"></section>
+<!-- Image Background Page Header -->
+<header class="business-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="tagline"><%=@bannertext%></h1>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Page Content -->
+<div class="container">
+  <hr>
+  <div class="col-md-9">
+    <%= yield %>
+  </div>
+  <div class="col-md-3">
+    <div class="well">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+  </div>
+</div>
